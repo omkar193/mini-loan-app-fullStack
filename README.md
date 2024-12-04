@@ -121,15 +121,15 @@ To get a local copy of the project up and running, follow these steps:
 
 ### Loan Management
 
-- **GET `/api/loans`**: Get all loans (Admin only).
-- **POST `/api/loans`**: Apply for a loan (Customer).
+- **GET `/api/loans`**: Get all loans .
+- **POST `/api/loans`**: Apply for a loan .
 - **GET `/api/loans/{id}`**: Get loan details by ID.
-- **PUT `/api/loans/{id}`**: Approve/Reject a loan (Admin only).
+- **PUT `/api/loans/{id}`**: Approve a loan (Admin only).
 
 ### Repayment Management
 
-- **GET `/api/repayments`**: Get all repayments (Admin only).
-- **POST `/api/repayments`**: Submit a repayment (Customer).
+- **GET `/api/repayments`**: Get all repayment .
+- **POST `/api/repayments`**: Submit a repayment .
 
 ## Testing
 
