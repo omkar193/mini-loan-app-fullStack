@@ -2,7 +2,7 @@
 
 # Mini Loan App
 
-A Full-Stack Application built with React, Spring Boot, and MongoDB atlas for managing loan applications, repayments, and user management. The app allows users to apply for loans, track repayments, and view loan statuses. Admins can approve loan requests.
+A Full-Stack Application built with React, Spring Boot, and MongoDB atlas for managing loan applications, repayments, and user management like user registration etc. The app allows users to apply for loans, track repayments, and view loan statuses. Admins can approve loan requests.
 
 ## Features
 
