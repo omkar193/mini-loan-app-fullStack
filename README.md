@@ -11,18 +11,19 @@ A Full-Stack Application built with React, Spring Boot, and MongoDB atlas for ma
   - Role-based access control with **Admin** and **Customer** roles.
   
 - **Loan Management**:
-  - Apply for loans by filling out a loan application form (Customer).
-  - View loan details, including repayment schedules (Customer).
-  - Admin can approve or reject loan requests.
-  - Admin can view all loans and their statuses.
+  - Apply for loans by filling out a loan application form.
+  - View loan details, including repayment schedules.
+  - Admin can approve loan requests.
+  - Admin can view all pending loans.
   
 - **Repayment Management**:
-  - Customers can submit repayments for loans.
-  - Admin can track all repayments made by customers.
+  - Customers can submit repayments for loans once admin approves it.
+  - Customer can track all repayments made by him.
+  - Once all repayments of a particular loan is PAID then status of that loan becomes PAID automatically.
   
 - **Admin Dashboard**:
-  - Admin can manage users, loans, and repayments.
-  - Admin can see a list of all loan requests and approve or reject them.
+  - Admin can approve pending loans.
+  - Admin can see a list of all loan requests and approve .
   
 - **Frontend**:
   - React.js for the frontend UI.
