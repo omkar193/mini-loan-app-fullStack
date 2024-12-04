@@ -2,7 +2,7 @@
 
 # Mini Loan App
 
-A Full-Stack Application built with React, Spring Boot, and MongoDB for managing loan applications, repayments, and user management. The app allows users to apply for loans, track repayments, and view loan statuses. Admins can manage loan requests, users, and repayments.
+A Full-Stack Application built with React, Spring Boot, and MongoDB atlas for managing loan applications, repayments, and user management. The app allows users to apply for loans, track repayments, and view loan statuses. Admins can approve loan requests.
 
 ## Features
 
@@ -100,8 +100,16 @@ To get a local copy of the project up and running, follow these steps:
 
 ### Database Configuration
 
-- MongoDB is used as the database.
-- By default, it runs locally on port 27017. Ensure MongoDB is running before starting the backend.
+- **MongoDB Atlas** is used as the database for this application.
+- By default, MongoDB runs locally on port `27017`. Ensure MongoDB is running before starting the backend.
+- To make the database accessible for testing and running from various environments, the MongoDB connection URI has been modified to allow connections from all IP addresses by setting it to `0.0.0.0/0`. This allows external connections to the database during development and testing.
+
+    ```plaintext
+    mongodb://<username>:<password>@cluster0.mongodb.net/your_database?retryWrites=true&w=majority
+    ```
+
+- **Important:** Make sure to change this back to a more secure setting for production deployments to restrict access to authorized IP addresses only.
+
 
 ## API Endpoints
 
