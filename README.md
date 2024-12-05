@@ -124,7 +124,7 @@ To get a local copy of the project up and running, follow these steps:
 - **GET `/api/loans`**: Get all loans .
 - **POST `/api/loans`**: Apply for a loan .
 - **GET `/api/loans/{id}`**: Get loan details by ID.
-- **PUT `/api/loans/{id}`**: Approve a loan (Admin only).
+- **PUT `/api/loans/{id}`**: Admin can approve a loan (Admin only).
 
 ### Repayment Management
 
