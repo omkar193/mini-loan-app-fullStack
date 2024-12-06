@@ -39,6 +39,7 @@ A Full-Stack Application built with React, Spring Boot, and MongoDB atlas for ma
 - **Frontend**:
   - React.js
   - React Router
+  - Context API
   - Axios for API requests
   - JWT Authentication
   
