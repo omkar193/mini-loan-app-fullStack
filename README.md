@@ -62,24 +62,68 @@ To get a local copy of the project up and running, follow these steps:
 - Install [Java 11 or higher](https://adoptopenjdk.net/)
 - Install [MongoDB](https://www.mongodb.com/try/download/community) (for local development)
   
-### Backend Setup
 
-1. Clone the repository:
+---
+
+### **Backend Setup**
+
+1. **Clone the Repository**  
+   Clone the repository using the following command:  
    ```bash
    git clone https://github.com/omkar193/mini-loan-app-fullStack.git
    ```
-   
-2. Navigate to the backend directory:
+
+2. **Navigate to the Backend Directory**  
+   Move into the backend directory:  
    ```bash
    cd mini-loan-app-fullStack/miniLoanApp
    ```
-   
-3. Build and run the Spring Boot application:
-   ```bash
-   ./mvnw spring-boot:run
-   ```
 
-   The backend will run on `http://localhost:8080`.
+3. **Verify Prerequisites**  
+   Ensure the following are installed on your system:  
+   - **Java 17 or above**  
+     Verify installation with:  
+     ```bash
+     java -version
+     ```
+   - **Maven**  
+     Verify installation with:  
+     ```bash
+     mvn -v
+     ```
+   - **MongoDB**  
+     Ensure MongoDB Atlas or a local MongoDB instance is running and properly configured.
+
+4. **Run the Spring Boot Application**  
+   - To run the application using the embedded Maven wrapper:  
+     ```bash
+     ./mvnw spring-boot:run
+     ```
+     *Note for Windows users:* Use the following instead:  
+     ```bash
+     mvnw.cmd spring-boot:run
+     ```
+   - Alternatively, package the application into a JAR and run it:  
+     ```bash
+     ./mvnw package
+     java -jar target/miniLoanApp-0.0.1-SNAPSHOT.jar
+     ```
+
+5. **Default Configuration**  
+   - By default, the backend will run on `http://localhost:8080`.  
+   - To change configurations (e.g., port), edit the `application.properties` file located in:  
+     ```
+     src/main/resources/application.properties
+     ```
+
+6. **(Optional) Running Without Maven**  
+   If Maven is not installed, you can use an IDE like IntelliJ IDEA or Eclipse:  
+   - Import the project as a Maven project.  
+   - Locate the `MiniLoanAppApplication` class in the `com.techdome.miniLoanApp` package.  
+   - Run the class as a Spring Boot application.
+
+---
+
 
 ### Frontend Setup
 
